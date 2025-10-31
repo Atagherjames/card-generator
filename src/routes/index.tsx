@@ -7,7 +7,7 @@ export const Route = createFileRoute('/')({
   // initial loader just loads random photos
   loader: async () => {
     const res = await fetch(
-      `https://api.unsplash.com/photos/random?count=8&client_id=${
+      `https://api.unsplash.com/photos/random?count=4&client_id=${
         import.meta.env.VITE_UNSPLASH_ACCESS_KEY
       }`
     )
@@ -36,7 +36,7 @@ function HomePage() {
     setLoading(true)
     try {
       const res = await fetch(
-        `https://api.unsplash.com/search/photos?query=${query}&per_page=8&client_id=${
+        `https://api.unsplash.com/search/photos?query=${query}&per_page=4&client_id=${
           import.meta.env.VITE_UNSPLASH_ACCESS_KEY
         }`
       )
