@@ -11,7 +11,7 @@ function DesignCardPage() {
   const [fontColor, setFontColor] = useState('#ffffff')
   const [fontFamily, setFontFamily] = useState('Poppins')
   const [isDownloading, setIsDownloading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const [, setError] = useState<string | null>(null)
 
   // Download handler
   const handleDownload = async () => {
